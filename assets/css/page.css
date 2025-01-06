@@ -1,0 +1,202 @@
+.page {
+    aspect-ratio: 16 / 9;
+    min-width: 720px;
+    border-radius: 2vw;
+    border: 1px solid rgba(125, 125, 125, 0.5);
+    margin: 2vw 2vw 4vw;
+
+    background: rgba(255, 255, 255, 0.5);
+    box-shadow: 0 10px 16px 4px rgba(0,0,0,0.5);
+
+    scroll-margin-top: 2vw;
+}
+
+.page h1 {
+    font-size: var(--font-size-xxl);
+}
+.page h2 {
+    font-size: var(--font-size-xl);
+}
+.page h3 {
+    font-size: var(--font-size-l);
+}
+.page h4 {
+    font-size: var(--font-size-m);
+}
+.page h5 {
+    font-size: var(--font-size-s);
+}
+.page h6 {
+    font-size: var(--font-size-xs);
+}
+.page p {
+    font-size: var(--font-size-xxs);
+}
+
+.page a:target {
+    color: rgba(255, 196, 0, 0.5);
+}
+
+.background-shine-to-bottom-right {
+    background-image: linear-gradient(to bottom right, transparent, rgba(255, 255, 255, 0.5) 40%,
+    rgba(255, 196, 0, 0.5) 50%, rgba(255, 255, 255, 0.5) 60%, transparent);
+rgba(255, 196, 0, 0.4) 50%, rgba(255, 255, 255, 0.5) 60%, transparent);
+    background-size: 400% 400%;
+    animation: gradient-to-bottom-right-animation 7s  ease infinite;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: -1;
+}
+
+.background-shine-to-right {
+    background-image: linear-gradient(to right, transparent, rgba(255, 255, 255, 0.5) 40%,
+    rgba(255, 196, 0, 0.4) 50%, rgba(255, 255, 255, 0.5) 60%, transparent);
+    background-size: 400% 400%;
+    animation: gradient-to-right-animation 13s  ease infinite;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: -1;
+}
+
+.background-shine-to-top {
+    background-image: linear-gradient(to top, transparent, rgba(255, 255, 255, 0.5) 30%,
+    rgba(255, 196, 0, 0.3) 50%, rgba(255, 255, 255, 0.5) 70%, transparent);
+    background-size: 400% 400%;
+    animation: gradient-to-top-animation 17s  ease infinite;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: -1;
+}
+
+@keyframes gradient-to-bottom-right-animation {
+    0% {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: 100% 100%;
+    }
+}
+
+@keyframes gradient-to-right-animation {
+    0% {
+        background-position: 0 50%;
+    }
+    100% {
+        background-position: 100% 50%;
+    }
+}
+
+@keyframes gradient-to-left-animation {
+    0% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0 50%;
+    }
+}
+
+
+@keyframes gradient-to-top-animation {
+    0% {
+        background-position: 50% 0;
+    }
+    100% {
+        background-position: 50% 100%;
+    }
+}
+
+.font-primary-gradient {
+    background: linear-gradient(to right, var(--color-darker), var(--color-primary), var(--color-darker));
+    animation: gradient-to-left-animation 5s ease-in-out infinite;
+    color: transparent!important;
+    background-clip: text;
+    background-size: 1000% 100%;
+}
+
+.font-secondary-gradient {
+    background: linear-gradient(to right, var(--color-darker), var(--color-secondary), var(--color-darker));
+    animation: gradient-to-left-animation 5s ease-in-out infinite;
+    color: transparent!important;
+    background-clip: text;
+    background-size: 1000% 100%;
+}
+
+.section-cover-links {
+    border-left: solid 1px var(--color-dark);
+    margin: 4vw;
+}
+.section-cover-links nav {
+    text-align: left;
+    font-size: var(--font-size-m);
+    font-weight: 300;
+}
+
+.section-cover-links nav ul {
+    list-style: none;
+}
+
+.section-cover-links nav ul li a {
+    background: linear-gradient(to right, var(--color-darker), var(--color-secondary-darker), var(--color-darker));
+    animation: gradient-to-left-animation 5s ease-in-out infinite;
+    color: transparent!important;
+    background-clip: text;
+    background-size: 1000% 100%;
+}
+
+.section-cover-links nav ul li a:hover {
+    color: var(--color-secondary)!important;
+    transition: 0.1s ease-in-out;
+}
+
+.color-square {
+    width: 40%;
+    aspect-ratio: 1/1;
+    border-radius: 20%;
+    border: 1px solid rgba(125, 125, 125, 0.5);
+    overflow: hidden;
+}
+
+.color-square-third {
+    height: 33.33%;
+    font-size: 1cqw;
+}
+
+.color-square-fourth {
+    height: 25%;
+    font-size: 1cqw;
+}
+
+#sound-toggle-button {
+    margin-inline: 2vw;
+}
+
+#sound-toggle-button:hover {
+    color: var(--color-secondary)!important;
+    transition: 0.1s ease-in-out;
+}
+
+#sound-toggle-button ion-icon {
+    transform: translateY(0.2cqw);
+}
+
+#sound-toggle-button ion-icon:hover {
+    color: var(--color-secondary)!important;
+    transition: 0.1s ease-in-out;
+}
+
+.references a {
+    color: var(--color-darker);
+    text-decoration: none;
+    line-height: 4cqw;
+}
+
+.references a:hover {
+    color: var(--color-secondary);
+    transition: 0.1s ease-in-out;
+}

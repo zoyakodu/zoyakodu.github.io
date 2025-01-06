@@ -1,0 +1,342 @@
+:root {
+    font-family: 'Montserrat', sans-serif;
+
+    --font-size-xxl: 7cqw;
+    --font-size-xl: 5.3cqw;
+    --font-size-l: 4.2cqw;
+    --font-size-m: 3.5cqw;
+    --font-size-s: 3.1cqw;
+    --font-size-xs: 2.4cqw;
+    --font-size-xxs: 1.6cqw;
+
+    --color-primary: #970;
+    --color-primary-darker: #750;
+    --color-primary-lighter: #B90;
+
+    --color-secondary: #209;
+    --color-secondary-darker: #106;
+    --color-secondary-lighter: #b9f;
+
+    --color-danger: #e34;
+    --color-warning: #c70;
+    --color-success: #080;
+    --color-info: #06f;
+
+    --color-light: #999;
+    --color-lighter: #ccc;
+    --color-lightest: #fff;
+
+    --color-dark: #666;
+    --color-darker: #333;
+    --color-darkest: #000;
+}
+
+body {
+    margin: 0;
+    font-size: 1.6cqw;
+}
+
+main {
+    background: rgba(74, 24, 255, 0.2);
+}
+
+
+h1, h2 {
+    font-family: 'Titillium Web', sans-serif;
+    text-align: center;
+}
+
+li {
+    margin-bottom: 0.5cqw;
+}
+
+
+.line-height-0 {
+    line-height: 0;
+}
+
+.line-height-1 {
+    line-height: 1;
+}
+
+.font-size-xxl {
+    font-size: var(--font-size-xxl)!important;
+}
+
+.font-size-xl {
+    font-size: var(--font-size-xl)!important;
+}
+
+.font-size-l {
+    font-size: var(--font-size-l)!important;
+}
+
+.font-size-m {
+    font-size: var(--font-size-m)!important;
+}
+
+.font-size-s {
+    font-size: var(--font-size-s)!important;
+}
+
+.font-size-xs {
+    font-size: var(--font-size-xs)!important;
+}
+
+.font-size-xxs {
+    font-size: var(--font-size-xxs)!important;
+}
+
+
+.color-primary {
+    color: var(--color-primary)!important;
+}
+
+.color-secondary {
+    color: var(--color-secondary)!important;
+}
+
+.color-dark {
+    color: var(--color-dark)!important;
+}
+.color-darker {
+    color: var(--color-darker)!important;
+}
+
+.color-darkest {
+    color: var(--color-darkest)!important;
+}
+
+.color-light {
+    color: var(--color-light)!important;
+}
+
+.color-lighter {
+    color: var(--color-lighter)!important;
+}
+
+.color-lightest {
+    color: var(--color-lightest)!important;
+}
+
+.weight-100 {
+    font-weight: 100;
+}
+.weight-200 {
+    font-weight: 200;
+}
+.weight-300 {
+    font-weight: 300;
+}
+.weight-400 {
+    font-weight: 400;
+}
+.weight-500 {
+    font-weight: 500;
+}
+.weight-600 {
+    font-weight: 600;
+}
+.weight-700 {
+    font-weight: 700;
+}
+.weight-800 {
+    font-weight: 800;
+}
+.weight-900 {
+    font-weight: 900;
+}
+
+.text-align-left {
+    text-align: left!important;
+    justify-content: left!important;
+}
+.text-align-center {
+    text-align: center!important;
+    justify-content: center!important;
+}
+.text-align-right {
+    text-align: right!important;
+    justify-content: right!important;
+}
+
+.height-100 {
+    height: 100%;
+}
+
+.margin-top-16 {
+    margin-top: 2vw!important;
+}
+
+.margin-top-32 {
+    margin-top: 4vw!important;
+}
+
+.padding-16 {
+    padding: 2vw;
+}
+
+.padding-32 {
+    padding: 4vw;
+}
+
+.margin-bottom-0 {
+    margin-bottom: 0;
+}
+
+.margin-top-0 {
+    margin-top: 0;
+}
+
+.center-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.justify-content-right {
+    justify-content: right;
+}
+
+
+/*nav {
+    /*display: grid;
+    grid-auto-flow: column;
+    text-align: center;
+    grid-auto-columns: minmax(0, 1fr);
+}*/
+
+nav a {
+    color: var(--color-dark);
+    text-decoration: none;
+    display: inline-block;
+    padding: 1vw 2vw;
+}
+
+nav a:hover {
+    color: var(--color-secondary);
+    transition: 0.1s ease-in-out;
+}
+
+nav a.active {
+    color: var(--color-secondary);
+}
+
+.main-navigation {
+    position: sticky;
+    top: 2vw;
+    background: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(16px);
+    box-shadow: 0 10px 16px 4px rgba(0,0,0,0.5);
+    border-radius: 100px;
+    margin: 0 2vw 2vw;
+    min-width: 720px;
+    z-index: 1;
+    display: flex;
+}
+
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.col {
+    padding: 2vw;
+    box-sizing: border-box;
+}
+.col-6{
+    flex: 0 0 50%;
+    width: 50%;
+}
+
+.col-3{
+    flex: 0 0 25%;
+    width: 25%;
+}
+
+.button-link {
+    background: none;
+    border: none;
+    padding: 0;
+    font: inherit;
+    cursor: pointer;
+    outline: none;
+}
+
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content > .dropdown {
+    width: 100%;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    width: 17vw;
+    display: none;
+    position: absolute;
+    left: 0;
+    background-color: rgba(255, 255, 255, 0.95);
+    min-width: 160px;
+    box-shadow: 0 10px 16px 4px rgba(0,0,0,0.5);
+    z-index: 1;
+    border-radius: 1vw;
+    border: 1px solid rgba(125, 125, 125, 0.5);
+}
+
+.dropdown-content .right-side {
+    right: -17vw;
+    top: 0;
+    left: unset;
+}
+
+/* Links inside the dropdown */
+.dropdown-content > a {
+    text-decoration: none;
+    color: var(--color-dark);
+    display: inline-block;
+    padding: 1vw 2vw;
+    width: 100%;
+    box-sizing: border-box;
+    border-radius: 1vw;
+}
+
+.dropdown-content > .dropdown > a{
+    text-decoration: none;
+    color: var(--color-dark);
+    display: inline-block;
+    padding: 1vw 2vw;
+    width: 100%;
+    box-sizing: border-box;
+    border-radius: 1vw;
+}
+
+/* Change color of dropdown links on hover */
+
+.dropdown-content > a:hover {
+    background-color: var(--color-lighter);
+    transition: 0.1s;
+}
+
+.dropdown-content > .dropdown > a:hover{
+    background-color: var(--color-lighter);
+    color: var(--color-secondary);
+    transition: 0.1s ease-in-out;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover > .dropdown-content {
+    display: block;
+}
+
+.caret {
+    font-size: 1cqw;
+    position: absolute;
+    right: 1vw;
+    top: 1.5vw;
+}
